@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Application with OpenWeather API
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This project is a web application that interacts with the OpenWeather API to display weather information. Users can search for weather data by city name and optionally filter the results by a specific date range to view historical weather data. The application is built using **Next.js**, a React framework, and is designed to be responsive and user-friendly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Search by City**: Enter a city name to retrieve current weather data.
+- **Date Range Filter**: Optionally, select a date range to view historical weather data.
+- **Responsive Design**: The application works seamlessly across different devices and screen sizes.
+- **Error Handling**: Graceful handling of API errors and user-friendly error messages.
+- **Optional Enhancements**:
+  - Unit conversion between Celsius and Fahrenheit.
+  - Caching to reduce API calls and improve performance.
+  - Support for multiple languages (localization).
+  - Weather forecasts for upcoming days.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **OpenWeather API**: Provides weather data, including current weather, forecasts, and historical data.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Before you begin, ensure you have the following installed:
 
-## Deploy on Vercel
+- **Node.js**: Download and install from [nodejs.org](https://nodejs.org/).
+- **npm**: Comes bundled with Node.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Setup and Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   https://github.com/gaurav700/openweather.git
+   cd openweather
+
+2. **Install Dependencies**
+
+    ```bash
+    npm install
+
+3. **Obtain an OpenWeather API Key**
+
+- Sign up at OpenWeather and obtain an API key.
+
+- Create a .env.local file in the root directory of your project and add your API key:
+
+    - ‎OPENWEATHER_API_KEY=your_api_key_here
+
+4. **Run the command**
+    ```bash
+    npm run dev
+The application is available at https://openweather-one.vercel.app/
