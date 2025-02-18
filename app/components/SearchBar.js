@@ -6,7 +6,7 @@ import { Search, Loader2 } from 'lucide-react';
 export default function SearchBar({ onSearch, loading }) {
 
   useEffect(() => {
-    // removing hydartion errors
+
   }, []);
 
   const [city, setCity] = useState('');
